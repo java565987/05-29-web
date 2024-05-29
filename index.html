@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="btns">
+        <div class="container">
+            <div class="btns_menu">
+                <button class="btn home">Home</button>
+                <button class="btn Poster">Poster</button>
+                <button class="btn Mobile">Mobile</button>
+                <button class="btn Mockup">Mockup</button>
+                <button class="btn Web">Web</button>
+            </div> 
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="wrapper">
+            <h1>Home</h1>
+            <h2>다양한 가치를 디자인 합니다.</h2>
+            <h3>Visual Design Gallery</h3>
+            <div class="content">
+                <img src="img/티샤스 포스터.png" alt="Home Image">
+
+                <img src="img/메타버스 포스터.png" alt="Home Image">
+                <img src="img/그림 포스터.jpg" alt="Home Image">
+                <img src="img/컬러 포스터.png" alt="Home Image">
+            </div>
+
+        </div>
+
+        <div class="subcontent">
+            <img src="img/메타버스 목업.jpg" alt="Home Image">
+            <img src="img/커피 목업.png" alt="Home Image">
+            <img src="img/노트 목업.jpg" alt="Home Image">
+        </div>
+    </section>
+    <section id="Poster">
+        <div class="wrapper">
+            <h1>Poster</h1>
+            <div class="content">
+
+                <img src="img/티샤스 포스터.png" alt="Home Image">
+                <img src="img/메타버스 포스터.png" alt="Home Image">
+                <img src="img/그림 포스터.jpg" alt="Home Image">
+                <img src="img/컬러 포스터.png" alt="Home Image">
+            </div>
+            <div class="subcontent"></div>
+
+        </div>
+    </section>
+    <section id="Mobile">
+        <div class="wrapper">
+            <h1>Mobile</h1>
+            <div class="content">
+            <img src="img/모바일.png" alt="Home Image">
+
+        </div>
+    </section>
+    <section id="Mockup">
+        <div class="wrapper">
+            <h1>Mockup</h1>
+            <div class="content">
+            <img src="img/메타버스 목업.jpg" alt="Home Image">
+            <img src="img/커피 목업.png" alt="Home Image">
+            <img src="img/노트 목업.jpg" alt="Home Image">
+
+        </div>
+    </section>
+    <section id="Web">
+        <div class="wrapper">
+            <h1>Web</h1>
+            <div class="content">
+            <img src="img/코딩페이지.jpg" alt="Home Image">
+
+
+        </div>
+    </section>
+    <script>
+        const btnHome = document.querySelector('.home');
+        const sectionHome = document.querySelector('#home');
+        btnHome.addEventListener('click', function(){
+            sectionHome.scrollIntoView({behavior:"smooth",block:"center"})    
+        });
+        const btnPoster = document.querySelector('.Poster');
+        const sectionPoster = document.querySelector('#Poster');
+        btnPoster.addEventListener('click', function(){
+            sectionPoster.scrollIntoView({behavior:"smooth",block:"center"})    
+        });
+        const btnMobile = document.querySelector('.Mobile');
+        const sectionMobile = document.querySelector('#Mobile');
+        btnMobile.addEventListener('click', function(){
+            sectionMobile.scrollIntoView({behavior:"smooth",block:"center"})    
+        });
+        const btnMockup = document.querySelector('.Mockup');
+        const sectionMockup = document.querySelector('#Mockup');
+        btnMockup.addEventListener('click', function(){
+            sectionMockup.scrollIntoView({behavior:"smooth",block:"center"})    
+        });
+        const btnWeb = document.querySelector('.Web');
+        const sectionWeb = document.querySelector('#Web');
+        btnWeb.addEventListener('click', function(){
+            sectionWeb.scrollIntoView({behavior:"smooth",block:"center"})    
+        });
+    </script>
+</body>
+</html>
